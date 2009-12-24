@@ -1,0 +1,7 @@
+<html>
+  <body>
+    <tal:block define="context nocall:maincontext"
+	       content="structure pageelement:portal.breadcrumbs" />
+    <div tal:content="structure view/render" />
+  </body>
+</html>

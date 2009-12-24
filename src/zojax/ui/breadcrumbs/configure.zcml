@@ -1,0 +1,25 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   i18n_domain="zojax.ui.breadcrumbs">
+
+  <zojax:pageelement
+     title="Breadcrumbs"
+     name="portal.breadcrumbs"
+     template="breadcrumbs.pt"
+     class=".breadcrumbs.BreadcrumbsViewlet" />
+
+  <adapter factory=".breadcrumb.GenericBreadcrumb" />
+
+  <!-- styles -->
+  <zojax:resourceinclude
+     name="zojax-ui-breadcrumbs.css"
+     library="zojax"
+     type="stylesheet"
+     file="styles.css" filetype="zrt" />
+
+  <!-- translations -->
+  <i18n:registerTranslations directory="locales"/>
+
+</configure>
