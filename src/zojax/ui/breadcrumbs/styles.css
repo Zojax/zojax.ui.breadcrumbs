@@ -1,0 +1,23 @@
+/* zrt-cssregistry: */
+
+@media all {
+  .z-breadcrumbs {
+    border-bottom: globalBorderColor borderStyle borderWidth;
+    padding: 0 2em 0 2em;
+    line-height: 1.5em;
+  }
+  
+  .z-breadcrumbs a {
+    text-decoration: none;
+  }
+  
+  .z-breadcrumbs-you-are-here {
+    font-size: 1.2em;
+  }
+}
+
+@media print { 
+  .z-breadcrumbs {
+    display: none;
+  }
+}
