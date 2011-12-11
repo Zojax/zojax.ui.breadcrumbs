@@ -6,7 +6,7 @@
       <a href="#"
          tal:omit-tag="python: not crumb['activeURL']"
          tal:attributes="href string:${crumb/url}"
-	 i18n:translate="" tal:content="crumb/name">
+	 tal:content="crumb/name">
         crumb
       </a>
     </tal:block>
